@@ -1,0 +1,19 @@
+keyword	cStatement \bgoto\b \bbreak\b \breturn\b \bcontinue\b
+keyword	cLabel \bcase\b \bdefault\b
+keyword	cConditional \bif\b \belse\b \bswitch\b
+keyword	cRepeat \bwhile\b \bfor\b \bdo\b
+keyword cFunction \bmain\b \bprintf\b \bexit\b
+keyword	cHead \s*#\s*include\b
+keyword	cType \bint\b \bchar\b
+keyword cBrackets ( )
+keyword cComments \/\*[\s\S]*\*\/ \/\/[^\n]*
+
+hi cStatement LIGHT_RED
+hi cLabel BLUE
+hi cConditional LIGHT_RED
+hi cRepeat LIGHT_RED
+hi cComments GREEN
+hi cFunction YELLOW
+hi cBrackets LIGHT_BLUE
+hi cHead LIGHT_RED
+hi cType CYAN
